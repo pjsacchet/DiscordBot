@@ -1,5 +1,5 @@
 # Patrick Sacchet
-# VERSION 1.0
+# VERSION 1.1
 # This version is the initial release of our new bot - it will be able to play music since all the other music bots are dead :(
 import os
 import discord

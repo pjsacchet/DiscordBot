@@ -10,5 +10,18 @@ The call for the creation of this bot started when all publicly available bots t
 - ffmpeg.exe (please note - this bot is run via Linux/Linux Kernel for Windows hence this was simply 'sudo apt install'-ed // If on Windows platform make sure this .exe is in your PATH)
 ## Running the Bot
 python3 Vibe.py
+## Current Features
+- !play
+  - Play YouTube links in your server! [please note you must be in a voice channel with VibeBot prior to playing]
+- !join
+  - Have the bot join your current voice channel [please note you must be in a voice channel first]
+- !leave
+  - Politely tell VibeBot to leave you alone!
+- !pause  
+  - Pause the current playing song
+- !stop
+  - Stop the current playing song all together
+- !resume
+  - Resume playing the currently paused song 
 ## Additional Notes
 Please note that due to the fact this is a 'bot' it must be actively running at all times if you want it on your server. I'd suggest throwing it on a Pi and keeping it there!
