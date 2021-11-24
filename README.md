@@ -7,6 +7,7 @@ The call for the creation of this bot started when all publicly available bots t
   - discord
   - dotenv (easy to read environment variables)
   - youtube_dl
+  - discord 
 - ffmpeg.exe (please note - this bot is run via Linux/Linux Kernel for Windows hence this was simply 'sudo apt install'-ed // If on Windows platform make sure this .exe is in your PATH)
 ## Running the Bot
 python3 Vibe.py
@@ -22,6 +23,10 @@ python3 Vibe.py
 - !stop
   - Stop the current playing song all together
 - !resume
-  - Resume playing the currently paused song 
+  - Resume playing the currently paused song
+- !commandlist
+  - List all commands currently implemented for user
+- !updates
+  - List most recent and planned updates for user
 ## Additional Notes
 Please note that due to the fact this is a 'bot' it must be actively running at all times if you want it on your server. I'd suggest throwing it on a Pi and keeping it there!

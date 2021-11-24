@@ -13,10 +13,6 @@ from discord.utils import get
 from youtube_dl import YoutubeDL
 from discord import FFmpegPCMAudio
 
-import Spotify
-
-bot
-
 # Roll to see if we mock the user sending messages in the channel, if we do, grab a random message
 def mock_user():
     random_num = random.randint(1, 10)
@@ -44,6 +40,22 @@ def main():
     # If a user wants to run a command they must prefix with a '!'
     bot = commands.Bot(command_prefix='!', intents=intents)
 
+    # Send list of most recent updates to user
+    @bot.command(name='updates', help='List recent updates for user')
+    async def updates(ctx):
+        with open("Updates.txt", "r") as file:
+            contents = file.read()
+            file.close()
+        await ctx.send(str(contents))
+
+    # Send list of commands to user
+    @bot.command(name='commandlist', help='List all commands for user')
+    async def commandlist(ctx):
+        with open("Commands.txt", "r") as file:
+            contents = file.read()
+            file.close()
+        await ctx.send(str(contents))
+
     # Have the bot join the channel the user is currently in
     @bot.command(name='join', help='Tells VibeBot to join the voice channel')
     async def join(ctx):
@@ -69,7 +81,7 @@ def main():
             await ctx.send("The bot is not connected to a voice channel")
 
     # Play a song (and make sure we aren't already playing something)
-    @bot.command(name='play-yt', help='Play audio from YouTube source')
+    @bot.command(name='play', help='Play audio from YouTube source')
     async def play(ctx, url):
         YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist': 'True'}
         FFMPEG_OPTIONS = {

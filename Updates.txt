@@ -1,0 +1,25 @@
+Patch 1.1 Changes:
+  - VibeBot now only has a 10% chance of randomly responding to Adam when he sends a message in a text channel
+
+  - !help command added that lists all current commands and requirements for each
+
+  - !updates command lists most recent changes from previous version
+
+Patch 1.2 Plans:
+  - Have VibeBot check if bot is in channel when user requests song, if not have the bot automatically join
+  - Search functionality for YouTube media
+  - Add kill switch
+  - Separate donger functionality?
+
+Patch ?? Plans:
+  - Fix misc error messages
+  - UWU pet command
+  - Multithreading for each song request
+  - Queue functionality for YouTube media
+
+Blockers:
+  - Soundcloud API no longer accepting users
+  - Spotify API authentication unreliable
+
+Wanna see the code? (its garbage):
+https://github.com/pjsacchet/DiscordBot

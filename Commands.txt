@@ -1,0 +1,24 @@
+Commands:
+  !play:
+    Play YouTube link in voice channel [must precede YouTube URL and bot must be connected to voice channel]
+
+  !join:
+    Have VibeBot join your voice channel [must be in voice channel prior to command]
+
+  !leave:
+    Tell VibeBot to get out of the voice channel
+
+  !pause:
+    Pause the song currently playing
+
+  !stop:
+    Stop the song currently playing
+
+  !resume:
+    Resume the song currently paused
+
+  !updates:
+    Prints most recent updates from previous patch
+
+  !help:
+    Display this help message
