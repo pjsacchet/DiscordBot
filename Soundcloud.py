@@ -1,7 +1,7 @@
 # Patrick Sacchet
 # Version 1.1
 # File implements soundcloud interaction and playing functionality
-# NOTE: Not yet integrated into main - TODO
+
 
 # Please note this API is deprecated... sadly... but it still works?
 import soundcloud
